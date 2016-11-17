@@ -1,5 +1,5 @@
 html {
-  background-color: lightblue;
+  background-color: white;
   color: white;
   z-index: 1;
 }
@@ -11,12 +11,13 @@ body {
   background-image: url("https://www.bankjoy.com/assets/images/backgrounds/background.jpg");
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
 }
 
 #overlay {
   height: 100vh;
   width: 100%;
-  background-color: rgb(58 ,72 ,105);
+  background-color: rgb(62,71,100);
   opacity: .85;
   position: absolute;
 }
@@ -58,6 +59,7 @@ body {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
+
   opacity: 1;
 }
 
@@ -140,6 +142,19 @@ a:hover, a:link, a:visited,s a:active {
 
 }
 
+#shadow {
+  top: 50px;
+  height: 575px;
+  width: 326px;
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  right: 50%;
+  transform: translate(50%);
+  box-shadow: 50px 0px 100px rgba(0,0,0,.45),
+  -50px 0px 100px rgba(0,0,0,.45);
+}
+
 #centerphone {
   height: 672px;
   width: 330px;
@@ -157,4 +172,9 @@ a:hover, a:link, a:visited,s a:active {
   left: 58.75%;
   top: 50px;
   margin: auto;
+}
+
+#empty {
+  height: 100vh;
+
 }
