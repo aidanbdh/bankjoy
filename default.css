@@ -13,16 +13,12 @@ body {
   background-position: top;
 }
 
-#headerbackground {
+#overlay {
   height: 100vh;
   width: 100%;
-  background-color: rgb(84 ,92 ,116);
-  opacity: .91;
+  background-color: rgb(58 ,72 ,105);
+  opacity: .85;
   position: absolute;
-}
-
-#content {
-  opacity: 1;
 }
 
 #contact {
@@ -35,7 +31,8 @@ body {
   margin-right: 54px;
   margin-top: 0px;
   z-index: 1;
-
+  top: 30px;
+  position: relative;
 }
 
 #contact a {
@@ -53,6 +50,15 @@ body {
   font-size: 24px;
   position: relative;
   top: 3px;
+}
+
+#container {
+  position: relative;
+  height: 700px;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
 }
 
 h1 {
@@ -73,11 +79,8 @@ h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   line-height: 66px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  margin-left: 50%;
-  transform: translate(-50%);
-  display : inline-block;
+  text-align: center;
+  display : block;
   z-index: 1;
 }
 
@@ -108,6 +111,8 @@ h3 {
   background-color: rgb(81,112,221);
   display: inline-block;
   margin-left: 50%;
+  margin-top: 0px;
+  margin-bottom: 80px;
   transform: translate(-50%);
   text-decoration: none;
 }
@@ -132,13 +137,14 @@ a:hover, a:link, a:visited,s a:active {
   right: 58.5%;
   top: 50px;
   margin: auto;
+
 }
 
 #centerphone {
   height: 672px;
   width: 330px;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   margin: auto;
   right: 50%;
   transform: translate(50%);
