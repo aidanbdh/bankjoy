@@ -87,3 +87,39 @@ a:hover, a:link, a:visited,s a:active {
   text-decoration: none;
   color: white;
 }
+
+#phonescontainer {
+  position: relative;
+  height: 700px;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#leftphone {
+  height: 631.734px;
+  width: 310px;
+  position: absolute;
+  right: 58.5%;
+  top: 50px;
+  margin: auto;
+}
+
+#centerphone {
+  height: 672px;
+  width: 330px;
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  right: 50%;
+  transform: translate(50%);
+}
+
+#rightphone {
+  height: 631.734px;
+  width: 310px;
+  position: absolute;
+  left: 58.75%;
+  top: 50px;
+  margin: auto;
+}
