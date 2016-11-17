@@ -13,7 +13,7 @@ body {
   background-position: top;
 }
 
-#headerbackground {
+#overlay {
   height: 100vh;
   width: 100%;
   background-color: rgb(58 ,72 ,105);
