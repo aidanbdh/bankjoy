@@ -14,12 +14,15 @@ body {
 }
 
 #headerbackground {
-  height: inherit;;
-  width: inherit;;
+  height: 100%;
+  width: 100%;
   background-color: rgb(84 ,92 ,116);
   opacity: .91;
   position: absolute;
-  z-index: 0;
+}
+
+#content {
+  opacity: 1;
 }
 
 #contact {
