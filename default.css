@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
+  font-weight: 300;
 }
 
 #overlay {
@@ -26,7 +27,6 @@ body {
   text-align: right;
   font-size: 17px;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
   line-height: 46px;
   margin: 32px;
   margin-right: 54px;
@@ -41,16 +41,43 @@ body {
   color: white;
 }
 
-#email, #phone {
-  margin-right: 16px;
-  z-index: 1;
-  color: white;
+#contact a:hover{
+  color: #428bca;
 }
 
-.icon {
-  font-size: 24px;
+#email, #phone {
+  margin-right: 36px;
+  z-index: 1;
+  color: white;
+  font-weight: 600;
+}
+
+#icon-phone {
   position: relative;
-  top: 3px;
+  top: 2px;
+}
+
+#icon-phone:before{
+    content: "\f095";
+    font-size: 17px;
+    line-height: 17px;
+    font-family: icomoon;
+    font-weight: normal;
+    margin-right: 4px;
+}
+
+#icon-email {
+  position: relative;
+  top: 2px;
+}
+
+#icon-email:before{
+    content: "\e002";
+    font-size: 17px;
+    line-height: 1px;
+    font-family: icomoon;
+    font-weight: normal;
+    margin-right: 4px;
 }
 
 #container {
@@ -83,17 +110,16 @@ h2 {
   line-height: 66px;
   text-align: center;
   display : block;
-  z-index: 1;
 }
 
 h3 {
+  opacity: .5;
   text-align: center;
   font-size: 14px;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
+  font-weight: 200;
   line-height: 15.4px;
   margin-bottom: 50px;
-  z-index: 1;
 }
 
 #demobutton {
@@ -104,24 +130,37 @@ h3 {
   text-align: center;
   font-size: 18px;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: normal;
   line-height: 25.7143px;
-  border-style: solid;
-  border-width: 1px;
   border-radius: 50px;
-  border-color: black;
   background-color: rgb(81,112,221);
   display: inline-block;
   margin-left: 50%;
-  margin-top: 0px;
-  margin-bottom: 80px;
+  margin-top: 10px;
+  margin-bottom: 70px;
   transform: translate(-50%);
   text-decoration: none;
 }
 
-a:hover, a:link, a:visited,s a:active {
+a:hover, a:link, a:visited, a:active {
   text-decoration: none;
   color: white;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#demobutton:hover {
+  animation-duration: .3s;
+  animation-name: pulse;
 }
 
 #phonescontainer {
